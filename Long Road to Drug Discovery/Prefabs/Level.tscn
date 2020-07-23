@@ -9,41 +9,34 @@ script = ExtResource( 2 )
 [node name="StartTile" parent="." instance=ExtResource( 1 )]
 position = Vector2( 90.2599, 256.314 )
 NextTilePath = NodePath("../Tile")
-LevelProgression = 0
 
 [node name="Tile" parent="." instance=ExtResource( 1 )]
 position = Vector2( 227.002, 100.301 )
 NextTilePath = NodePath("../Tile2")
-LevelProgression = 1
 TileType = 1
 
 [node name="Tile2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 480.1, 112.351 )
 tileNumber = 2
-LevelProgression = 1
 TileType = 1
 
 [node name="Tile3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 702.027, 176.896 )
 tileNumber = 3
-LevelProgression = 0
 TileType = 2
 
 [node name="Tile4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 918.968, 319.191 )
 tileNumber = 4
-LevelProgression = -2
 TileType = 2
 
 [node name="Tile5" parent="." instance=ExtResource( 1 )]
 position = Vector2( 667.883, 473.149 )
 tileNumber = 5
-LevelProgression = 1
 TileType = 3
 
 [node name="Tile6" parent="." instance=ExtResource( 1 )]
 position = Vector2( 364.197, 610.419 )
 tileNumber = 6
 NextTilePath = NodePath("../StartTile")
-LevelProgression = 1
 TileType = 3

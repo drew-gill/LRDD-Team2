@@ -5,8 +5,8 @@ class_name HUD2
 var currentPlayerNumber
 var currentPlayer
 
+#signal transfer_phaseandroll
 signal beginMoving
-signal transfer_phaseandroll
 
 func _ready():
 	_showAll(false)
@@ -111,6 +111,6 @@ func _on_RollDice_pressed():
 	var roll = randi()%6 + 1
 	currentPlayer.setCurrentTile(roll)
 	emit_signal("beginMoving")
-	connect("transfer_phaseandroll", get_node("DialogueBox/Dialogue"), "_on_transfer_phaseandroll")
-	emit_signal("transfer_phaseandroll", int(currentPlayer.getCurrentLevel()), int(currentPlayer.getCurrentTile()))
+	#connect("transfer_phaseandroll", get_node("DialogueBox/Dialogue"), "_on_transfer_phaseandroll")
+	#emit_signal("transfer_phaseandroll", int(currentPlayer.getCurrentLevel()), int(currentPlayer.getCurrentTile()))
 	

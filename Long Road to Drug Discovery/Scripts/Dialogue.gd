@@ -71,6 +71,13 @@ var dialogPhase9Part2 = ["Roll the dice to determine the number of lives saved o
 var phase = 1
 var roll = 0
 
+func setDialogue(phaseValue,rollValue):
+	phase = phaseValue
+	roll = rollValue
+	print(phase)
+	print(roll)
+	_ready()
+
 func _on_transfer_phaseandroll(phaseValue, rollValue):
 	phase = phaseValue
 	roll = rollValue

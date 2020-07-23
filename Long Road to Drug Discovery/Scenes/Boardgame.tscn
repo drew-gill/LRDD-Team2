@@ -9,7 +9,6 @@
 [ext_resource path="res://Custom Assets/TileSprites/laserYellow3.png" type="Texture" id=7]
 [ext_resource path="res://Custom Assets/TileSprites/shipBeige.png" type="Texture" id=8]
 
-
 [node name="Node2D" type="Node2D"]
 position = Vector2( 3, 41 )
 

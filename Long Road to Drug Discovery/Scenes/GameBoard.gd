@@ -24,3 +24,4 @@ func generate_HUD():
 	var newHUD = load("res://Scenes/HUD2.tscn").instance()
 	add_child(newHUD)
 
+
